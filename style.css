@@ -1,0 +1,161 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  padding: 20px;
+  color: #222;
+}
+
+.bundle-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Heading */
+.bundle-heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #008000; /* green like screenshot */
+}
+
+/* Bundle Box */
+.bundle-box {
+  display: block;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  position: relative;
+}
+
+.bundle-box input[type="radio"] {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  accent-color: #008000; /* green radio button */
+  transform: scale(1.2);
+}
+
+/* Bundle Content */
+.bundle-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.bundle-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.bundle-title {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.bundle-price {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.bundle-old-price {
+  font-size: 13px;
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+
+.bundle-offer {
+  font-weight: 600;
+  font-size: 13px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Highlighted Box (Selected) */
+.bundle-box.selected {
+  border: 2px solid #008000;
+  background-color: #f0fff0; /* light green tint */
+}
+
+.highlight {
+  color: #008000;
+  font-weight: 600;
+}
+
+.highlight-text {
+  color: #008000;
+  font-weight: bold;
+}
+
+/* Bundle Options (dropdowns shown only for selected) */
+.bundle-options {
+  margin-top: 15px;
+  padding-left: 30px;
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.option-row span {
+  width: 20px;
+}
+
+/* Select styling */
+select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Footer Info */
+.bundle-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 10px;
+  font-size: 14px;
+}
+
+.shipping-info {
+  color: #008000;
+  font-weight: 500;
+}
+
+.total-price strong {
+  font-size: 16px;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+  width: 100%;
+  background-color: #008000;
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #006600;
+}

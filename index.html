@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bundle & Save</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="bundle-container">
+    <h2 class="bundle-heading">Bundle & Save</h2>
+
+    <!-- Bundle 1 -->
+    <label class="bundle-box">
+      <input type="radio" name="bundle" value="1" />
+      <div class="bundle-content">
+        <div class="bundle-info">
+          <span class="bundle-title">1 Pair</span>
+          <span class="bundle-price">DKK 195.00</span>
+        </div>
+        <div class="bundle-offer">50% OFF</div>
+      </div>
+    </label>
+
+    <!-- Bundle 2 (Expanded by Default) -->
+    <label class="bundle-box selected">
+      <input type="radio" name="bundle" value="2" checked />
+      <div class="bundle-content">
+        <div class="bundle-info">
+          <span class="bundle-title">2 Pair</span>
+          <div>
+            <span class="bundle-price highlight">DKK 345.00</span>
+            <span class="bundle-old-price">DKK 195.00</span>
+          </div>
+        </div>
+        <div class="bundle-offer highlight-text">Most Popular - 40% OFF</div>
+      </div>
+
+      <!-- Expandable Options -->
+      <div class="bundle-options">
+        <div class="option-row">
+          <span>#1</span>
+          <select class="size-select">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <select class="color-select">
+            <option value="">colour</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="black">Black</option>
+          </select>
+        </div>
+
+        <div class="option-row">
+          <span>#2</span>
+          <select class="size-select">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <select class="color-select">
+            <option value="">colour</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="black">Black</option>
+          </select>
+        </div>
+      </div>
+    </label>
+
+    <!-- Bundle 3 -->
+    <label class="bundle-box">
+      <input type="radio" name="bundle" value="3" />
+      <div class="bundle-content">
+        <div class="bundle-info">
+          <span class="bundle-title">3 Pair</span>
+          <span class="bundle-price">DKK 528.00</span>
+        </div>
+        <div class="bundle-offer">60% OFF</div>
+      </div>
+    </label>
+
+    <!-- Footer Section -->
+    <div class="bundle-footer">
+      <span class="shipping-info">Free 2 Day Shipping</span>
+      <span class="total-price">Total: <strong>DKK 360.00</strong></span>
+    </div>
+
+    <!-- Add to Cart -->
+    <button class="add-to-cart">+ Add to Cart</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
